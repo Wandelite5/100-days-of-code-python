@@ -24,6 +24,7 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+
 import random
 my_list = [rock, paper, scissors]
 names = {rock: "Rock", paper: "Paper", scissors: "Scissors"}

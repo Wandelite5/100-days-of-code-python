@@ -36,9 +36,9 @@ print(password_list)
 random.shuffle(password_list)
 print(password_list)
 
-password = ""
+final_password = "" # reset here before rebuilding
 for char in password_list:
-    password += char
+    final_password += char
 
-print(f"Your password is: {password}")
+print(f"Your password is: {final_password}")
 

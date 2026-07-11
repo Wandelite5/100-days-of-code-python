@@ -33,8 +33,19 @@ user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 f
 # Note: it's worth checking if the user has made a valid choice before the next line of code.
 # If the user typed somthing other than 0, 1 or 2 the next line will give you an error.
 # You could for example write:
+''''
+The whole thing rests on the order you assigned: 0 = rock, 1 = paper, 2 = scissors. 
+That order isn't random — it follows the real game. Each item beats the one before it:
+paper (1) beats rock (0)
+scissors (2) beats paper (1)
+Whoever has the higher number wins. If the computer's number is bigger, you lose. 
+If yours is bigger, you win. That single rule correctly handles paper-vs-rock and scissors-vs-paper, because in both
+of those the higher number really does win. **But the rule has one exception. There's a "wrap-around" in 
+rock-paper-scissors: the lowest beats the highest. Rock (0) beats scissors (2). Here the lower number wins, 
+which breaks the "higher wins" rule. So that one case has to be caught before the general rule runs:
+'''
 if user_choice >= 0 and user_choice <= 2:
-    print(game_images[user_choice])
+    print(game_images[user_choice]) 
 
 computer_choice = random.randint(0, 2)
 print("Computer chose:")
