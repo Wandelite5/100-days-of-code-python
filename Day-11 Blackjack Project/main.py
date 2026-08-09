@@ -80,4 +80,4 @@ while computer_score != 0 and computer_score < 17:
 # FINAL COMPARISON — print both final hands and the result
 print(f"Your final hand: {user_list}, score: {user_score}")
 print(f"Computer's final hand: {computer_list}, score: {computer_score}")
-compare(user_score, computer_score)
+compare(user_score, computer_score) 
